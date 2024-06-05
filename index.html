@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>1er étape avant de commencer le SASS</h1>
+
+
+    <!-LE RECFACTORING- = réorganisation du code,code facile à lire à comprendre et à mettre à jour--------- ->
+
+  <h1>code sans refactoring = sans organisation</h1>
+<h2>différents exemple de boutons</h2>
+<div class="buttons exercice">
+<button class="btn">Bouton</button>
+<button class=" btn btn-round">Bouton</button>
+<button class="wide">Bouton</button>
+<button class="orange-round">Bouton</button>
+
+<div>
+<p>.turquoise{
+padding: 15px;
+border: none;
+width: 200px;
+background: #48D1CC;
+}
+<br>
+.round{
+    padding: 15px;
+    border: none;
+    width: 200px;
+    background: #48D1CC;
+    border-radius: 30px;
+    color: #242424;
+    }
+    <br>
+    .wide{
+        padding: 15px;
+        border: none;
+        width: 400px;
+        background: #48D1CC;
+        color: #242424;
+        }
+<br>
+        .orange-round{
+            padding: 15px;
+            border: none;
+            width: 200px;
+            background: orange;
+            border-radius: 30px;
+            }
+
+<br>
+
+<h1>j'applique  le DRY(Do not repeat yourself)</h1>
+<h3>J'enléve tout ce qui peut-être répetitif dans mon code</h3>
+<br>
+<h3>Pour en faire un générique commun</h3>
+
+</p>
+<br>
+<div>
+<p>
+
+    .btn-round {
+        border-radius: 30px;
+      }
+
+
+
+</p>
+
+<h1>RECFACTORING + DRY(Do not repeat yourself) </h1>
+
+<div>
+
+    <p>
+        .wide {
+            padding: 15px;
+            width: 400px;
+            border: none;
+            color: #242424;
+            background: #48d1cc;
+          }
+          <br>
+          .orange-round {
+            padding: 15px;
+            border: none;
+            width: 200px;
+            background: orange;
+            border-radius: 30px;
+          }
+          <br>
+          .btn {
+            padding: 15px;
+            border: none;
+            width: 200px;
+            color: #242424;
+            background: #48d1cc;
+          }
+    </p>
+</div>
+
+<h2>
+    CONCLUSION/ 
+    <br> FAIRE 3 étapes
+    <br>
+    trouver les répétitions
+    <br>
+    les réunirent dans une class
+    <br>
+    et réutiliser ces classes pour éviter les répétitions
+</h2>
+
+</div>
+</div>
+
+</body>
+</html>
